@@ -1,0 +1,14 @@
+import torch.nn as nn
+import torchvision
+from common import config
+
+class MyResNet(nn.Module):
+    def __init__(self, num_classes=config.CLASSES_NUM):
+        super().__init__()
+        self.res34 = torchvision.models.resnet34(pretrained=True)
+        self.res34.fc = nn.Linear(512, num_classes)
+
+    def forward(self, x):
+        x = self.res34(x)
+        return x
+    

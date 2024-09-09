@@ -1,0 +1,5 @@
+train: YOLO/images/train
+val: YOLO/images/val
+
+nc: 1
+names: ['tongue']
