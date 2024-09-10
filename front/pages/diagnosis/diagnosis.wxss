@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+
+.pic{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #ccc;
+  clip-path: path("M200,270 C275,240 300,180 300,120 C300,60 100,60 100,120 C100,180 125,240 200,270  Z"); /* Same path as camera container */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:blue;
+}
+
+.propose{
+  margin-top: 20px;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.propose image{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.propose text{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
