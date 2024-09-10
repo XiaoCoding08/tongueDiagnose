@@ -1,0 +1,16 @@
+<view class="container">
+  <view >
+      <image class="pic" src="{{PicPath}}" mode="widthFix"></image>
+  </view>
+  <view class="diagnosisResult">
+    <view class="constitution">
+      <text class="title">您的体质为：</text>
+      <text class="result">{{result}}</text>
+    </view>
+  </view>
+  <view class="propose">
+    <text style="font-size: 20px;">推荐饮用饮料：{{proposeDrunk}}</text>
+    <text style="font-size: 17px;">{{desc}}</text>
+    <image src="{{proposeDrunkPicSrc}}" mode=""/>
+  </view>
+</view>

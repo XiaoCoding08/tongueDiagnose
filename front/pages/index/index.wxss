@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  text-align: left;
+  font-size: 16px;
+}
+
+.camera-container {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.clip-area {
+  width: 100%;
+  height: 100%;
+  clip-path: path("M200,270 C275,240 300,180 300,120 C300,60 100,60 100,120 C100,180 125,240 200,270  Z"); /* Adjusted path for new size */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.camera {
+  width: 100%;
+  height: 100%;
+}
+
+.capture-btn {
+  margin-bottom: 20px;
+}
+
+.captured-photo {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  clip-path: path("M200,270 C275,240 300,180 300,120 C300,60 100,60 100,120 C100,180 125,240 200,270  Z"); /* Same path as camera container */
+}

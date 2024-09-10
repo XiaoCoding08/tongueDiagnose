@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="header">
+    <text class="title">拍照上传</text>
+    <view class="instructions">
+      <text>
+        拍摄时，请注意以下几点：
+        ✔ 将舌头完整放置在拍摄区域内
+        ✔ 自然光线充足,不逆光,不反光
+        ✔ 确保舌头无异物、无异色，舌面平展
+      </text>
+    </view>
+  </view>
+  <view class="camera-container">
+    <view class="clip-area">
+      <camera id="myCamera" device-position="front" flash="off" binderror="cameraError" class="camera"></camera>
+    </view>
+  </view>
+  <button class="capture-btn" bindtap="takePhoto">拍照</button>
+  <view wx:if="{{photoPath}}">
+    <image src="{{photoPath}}" mode="widthFix" class="captured-photo"></image>
+    <button class="upload-btn" bindtap="uploadPhoto">上传并诊断</button>
+  </view>
+</view>
