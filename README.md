@@ -34,7 +34,7 @@
 ### 后端：
 
 - **轻量级 Web 框架:** Flask
-- **深度学习框架：**Pytorch
+- **深度学习框架：** Pytorch 
 - **目标检测:** YOLOv8 ultralytics
 
 
